@@ -65,15 +65,45 @@ border-image-slice: 1;
 
 
 .imgone {
+position:absolute;
+left:3%;
 transform:rotate(-15deg);
+top:50%;
 }
 .imgtwo {
 position:absolute;
-right:1%;
+right:3%;
 transform:rotate(-170deg);
+top:50%;
 }
   
-  
+.imgtwo {
+  animation: rotation1 8s infinite linear;
+}  
+.imgone {
+  animation: rotation2 8s infinite linear;
+}  
+@keyframes rotation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes rotation2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-359deg);
+  }
+}
+ul {
+margin-left:30px;
+}
+
+
 </style>
     
 </head>
@@ -93,8 +123,8 @@ transform:rotate(-170deg);
 </ul>  
 </div>
 
-<img src = "https://taming.io/img/item/diamond-spear.png" class = "imgone" alt = "d_spear" height = "70">
-<img src = "https://taming.io/img/item/diamond-katana.png" class = "imgtwo" alt = "d_spear" height = "70">
+<img src = "https://taming.io/img/item/diamond-spear.png" class = "imgone" alt = "d_spear" height = "33">
+<img src = "https://taming.io/img/item/diamond-katana.png" class = "imgtwo" alt = "d_spear" height = "33">
 
 <div class = "ptextarea">
 <p>There's much more than this. The clan is still in development, but it'll definitely grow!</p>
