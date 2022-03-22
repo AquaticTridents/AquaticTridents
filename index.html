@@ -43,17 +43,15 @@ background-size: cover;
 }  
 
 .button {
-background-color:rgb(114, 137, 218);
-        color: white;
-        padding: 10px 80px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 17px;
-        margin: 4px 76px;
-        cursor:pointer;
-        border-radius:30px;   
-		background-image: linear-gradient(to bottom right, rgb(3, 111, 252), cyan);  
+    border-top: 10px solid #FFFF00;
+    border-bottom:10px solid rgb(255, 0, 255);
+    background-image: 
+        linear-gradient(#FFFF00, rgb(255, 0, 255)),
+        linear-gradient(rgb(247, 255, 0), rgb(255, 0, 255));
+    background-size:10px 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+    border-radius:10px;
 }
 .button:hover{
 background-color:rgb(75, 95, 163);
